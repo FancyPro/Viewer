@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="FirstView" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="120" placeholderIntrinsicHeight="120" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="U5o-iy-HWn">
+                                <rect key="frame" x="100" y="154" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="EkX-KR-spe"/>
+                                    <constraint firstAttribute="width" secondItem="U5o-iy-HWn" secondAttribute="height" multiplier="1:1" id="I9R-qj-9HS"/>
+                                    <constraint firstAttribute="height" constant="120" id="oU3-R6-rdm"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="icf-p4-ziG"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viewer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwS-rA-Adm">
+                                <rect key="frame" x="109.5" y="294" width="101" height="28"/>
+                                <viewLayoutGuide key="safeArea" id="MdN-dQ-KoT"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="28"/>
+                                <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© Fancy@CSD Studio 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTA-Yd-Ngr">
+                                <rect key="frame" x="66.5" y="518" width="187.5" height="18"/>
+                                <accessibility key="accessibilityConfiguration" label="©Fancy@CSD Studio 2018">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <viewLayoutGuide key="safeArea" id="cGo-Cc-l5e"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XTA-Yd-Ngr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AwO-h5-3wO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XTA-Yd-Ngr" secondAttribute="bottom" constant="32" id="XPn-12-qpO"/>
+                            <constraint firstItem="KwS-rA-Adm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nVT-jM-Fen"/>
+                            <constraint firstItem="U5o-iy-HWn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rTY-lX-hVH"/>
+                            <constraint firstItem="U5o-iy-HWn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-20" id="tYN-Sb-nFD"/>
+                            <constraint firstItem="KwS-rA-Adm" firstAttribute="top" secondItem="U5o-iy-HWn" secondAttribute="bottom" constant="20" id="zoo-uE-4I1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.625" y="373.94366197183098"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="120" height="120"/>
+    </resources>
+</document>
